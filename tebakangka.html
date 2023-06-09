@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100%;
+            height: 50vh;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+        .container input{
+            display: inline-block;
+            width: 250px;
+            height: 30px;
+            padding: 0 20px;
+            border-radius: 5px;
+        }
+        .container button{
+            display: inline;
+            width: 70px;
+            height: 25px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+        .container button:hover{
+            opacity: 0.5;
+        }
+        .content{
+            position: absolute;
+            top: 50%;
+            display: flex;
+            gap: 20px;
+        }
+        .judul{
+            text-align: center;
+            font-size: 2em;
+            font-weight: 600;
+        }
+        .content span{
+            font-size: 1.25em;
+        }
+    </style>
+</head>
+<body>
+    <h3 class="judul">tebak angka</h3>
+    <div class="container">
+        <label for="input">masukkan angka 1-10</label>
+        <input type="text" class="inputUser">
+        <button class="handlercontent">click</button>
+        <div class="content">
+            <span>hasil :</span>
+            <p class="output"></p>
+        </div>   
+    </div>
+ 
+    <script src="tebakangka.js"></script>
+</body>
+</html>
